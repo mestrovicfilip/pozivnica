@@ -49,7 +49,7 @@
     }
     async loadEntrypoint(t) {
       let {
-        entrypointUrl: i = u("main.dart.js?v=1.0.1"),
+        entrypointUrl: i = u("main.dart.js"),
         onEntrypointLoaded: r,
         nonce: e,
       } = t || {};
@@ -63,7 +63,7 @@
       if (t.compileTarget === "dart2wasm")
         return this._loadWasmEntrypoint(t, i, a, n);
       {
-        let o = t.mainJsPath ?? "main.dart.js?v=1.0.1",
+        let o = t.mainJsPath ?? "main.dart.js",
           l = u(a, o);
         return this._loadJSEntrypoint(l, n, e);
       }
@@ -379,7 +379,7 @@ _flutter.buildConfig = {
     {
       compileTarget: "dart2js",
       renderer: "canvaskit",
-      mainJsPath: "main.dart.js?v=1.0.1",
+      mainJsPath: "main.dart.js",
     },
   ],
 };

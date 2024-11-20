@@ -96,13 +96,12 @@
     </div>
     <script src="flutter_bootstrap.js" async></script>
     <script>
-      var appVersion = "1.0.0";
       window.addEventListener("load", function (ev) {
         _flutter.loader
           .loadEntrypoint({
-            entrypointUrl: "main.dart.js?v=" + appVersion,
+            entrypointUrl: "main.dart.js",
             serviceWorker: {
-              serviceWorkerVersion: appVersion,
+              serviceWorkerVersion: "",
             },
           })
           .then(function (engineInitializer) {

@@ -101,6 +101,10 @@
         _flutter.loader
           .loadEntrypoint({
             entrypointUrl: "main.dart.js?v=" + appVersion,
+            serviceWorker: {
+              enabled: true,
+              scriptUrl: "flutter_service_worker.js?v=" + appVersion,
+            },
           })
           .then(function (engineInitializer) {
             return engineInitializer.initializeEngine();

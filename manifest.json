@@ -1,6 +1,6 @@
 {
-  "name": "pozivnica",
-  "short_name": "pozivnica",
+  "name": "Pozivnica",
+  "short_name": "Pozivnica",
   "start_url": ".",
   "display": "standalone",
   "background_color": "#0175C2",
